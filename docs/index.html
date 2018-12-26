@@ -57,12 +57,24 @@
     <h2>About</h2>
     <p>Stock watch provides a simple interface to query and view the historical data for NASDAQ stock exchange. </p>
 
+<p>The <code>Quantmode</code> library was used for getting data from <code>yahoo</code> website.</p>
+
+<pre><code class="r">library(quantmod)
+head(getSymbols(&quot;AMZN&quot;, src = &quot;yahoo&quot;, 
+                auto.assign = FALSE))
+</code></pre>
+
   </div>
 </section>
 <section class="slide " id="slide-4">
   <div>
     <h2>Usage</h2>
     <p>Navigate to the dashboard tab, choose the symbol and the date range for querying the data. The time span can be narrowed down using the range selector on the bottom of the plot or using the date selector buttons. A table of processed data can be viewed in the raw data tab.</p>
+
+<ul>
+<li><a href="https://staheri.shinyapps.io/US-Stock-Market/">Website</a><br></li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_average">Source Code</a><br></li>
+</ul>
 
   </div>
 </section>
