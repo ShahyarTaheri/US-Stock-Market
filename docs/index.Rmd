@@ -43,7 +43,7 @@ getSymbols("AMZN",src="yahoo",auto.assign=F)[1:2,1:4]
 Navigate to the dashboard tab, choose the symbol and the date range for querying the data. The time span can be narrowed down using the range selector on the bottom of the plot or using the date selector buttons. A table of processed data can be viewed in the raw data tab.
 
 - [Website](https://staheri.shinyapps.io/US-Stock-Market/)   
-- [Source Code](https://en.wikipedia.org/wiki/Moving_average)  
+- [Source Code at Github](https://github.com/ShahyarTaheri/US-Stock-Market)  
 
 --- .cover #FitToWidth
 ![cover](./plot.png)
