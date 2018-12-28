@@ -30,14 +30,12 @@ url :
 
 ---
 ## About
-
-Stock watch provides a simple interface to query and view the historical data for NASDAQ stock exchange. 
-
-The `Quantmode` library was used for getting data from `yahoo` website.
-```{r, message=FALSE, results='hide'}
+```{r, message=FALSE, results='hide',echo=FALSE}
 library(quantmod)
-head(getSymbols("AMZN", src = "yahoo", 
-                auto.assign = FALSE))
+```
+Stock watch provides a simple interface to query and view the historical data for NASDAQ stock exchange. The `Quantmode` library was used for getting data from `yahoo` website.
+```{r, message=FALSE}
+getSymbols("AMZN",src="yahoo",auto.assign=F)[1:2,1:4]
 ```  
 
 ---
@@ -52,7 +50,7 @@ Navigate to the dashboard tab, choose the symbol and the date range for querying
 
 --- 
 ## Indicators
-The following indicators are included in the plots:
+The following indicators are included calculated in the server and displayed on the dashboard:
 
 - [Moving Average](https://en.wikipedia.org/wiki/Moving_average)          
 - [Bollinger Bands](https://en.wikipedia.org/wiki/Bollinger_Bands)

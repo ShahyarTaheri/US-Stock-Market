@@ -24,7 +24,7 @@ shinyUI(dashboardPage (
             The time span can be narrowed down using the range selector on the bottom of the plot or using the date selector buttons.  
             A table of processed data can be viewed in the raw data tab.")),      
       box(title = 'Indicators',status = 'info',solidHeader = F, width = 12,
-          p("Follwing indicators are included:"),
+          p("Follwing indicators are calculated in the server and displayed on the dashboard:"),
           tags$ul(
           tags$li(tags$a(href="https://en.wikipedia.org/wiki/Moving_average", "Moving Average")),
           tags$li(tags$a(href="https://en.wikipedia.org/wiki/Bollinger_Bands", "Bollinger Bands")),

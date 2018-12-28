@@ -55,13 +55,14 @@
 <section class="slide " id="slide-3">
   <div>
     <h2>About</h2>
-    <p>Stock watch provides a simple interface to query and view the historical data for NASDAQ stock exchange. </p>
+    <p>Stock watch provides a simple interface to query and view the historical data for NASDAQ stock exchange. The <code>Quantmode</code> library was used for getting data from <code>yahoo</code> website.</p>
 
-<p>The <code>Quantmode</code> library was used for getting data from <code>yahoo</code> website.</p>
+<pre><code class="r">getSymbols(&quot;AMZN&quot;,src=&quot;yahoo&quot;,auto.assign=F)[1:2,1:4]
+</code></pre>
 
-<pre><code class="r">library(quantmod)
-head(getSymbols(&quot;AMZN&quot;, src = &quot;yahoo&quot;, 
-                auto.assign = FALSE))
+<pre><code>##            AMZN.Open AMZN.High AMZN.Low AMZN.Close
+## 2007-01-03     38.68     39.06    38.05       38.7
+## 2007-01-04     38.59     39.14    38.26       38.9
 </code></pre>
 
   </div>
@@ -73,7 +74,7 @@ head(getSymbols(&quot;AMZN&quot;, src = &quot;yahoo&quot;,
 
 <ul>
 <li><a href="https://staheri.shinyapps.io/US-Stock-Market/">Website</a><br></li>
-<li><a href="https://github.com/ShahyarTaheri/US-Stock-Market">Source Code at Github</a><br></li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_average">Source Code</a><br></li>
 </ul>
 
   </div>
@@ -88,13 +89,14 @@ head(getSymbols(&quot;AMZN&quot;, src = &quot;yahoo&quot;,
 <section class="slide " id="slide-6">
   <div>
     <h2>Indicators</h2>
-    <p>The following indicators are calculated in the server and provided in the dashboard:</p>
+    <p>The following indicators are included calculated in the server and displayed on the dashboard:</p>
 
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Moving_average">Moving Average</a><br></li>
 <li><a href="https://en.wikipedia.org/wiki/Bollinger_Bands">Bollinger Bands</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Relative_strength_index">Relative Strength Index (RSI)</a></li>
 </ul>
+
   </div>
 </section>
   <div class="progress">
